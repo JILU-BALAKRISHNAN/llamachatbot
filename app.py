@@ -12,7 +12,7 @@ client = OpenAI(
 
 st.set_page_config(page_title="LLaMA Chatbot", layout="centered")
 
-st.title("🤖 LLaMA Chatbot via Groq")
+st.title("🤖 Jilu's first LLaMA Chatbot via Groq")
 st.write("Ask anything and get answers powered by LLaMA on Groq!")
 
 # Session state to store chat history
