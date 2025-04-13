@@ -3,12 +3,30 @@ import os
 import openai
 
 # --- Set your Groq API Key here ---
-GROQ_API_KEY = "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"
+#GROQ_API_KEY = "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"
   # Replace with your key
-client = OpenAI(
-    api_key=GROQ_API_KEY,
-    base_url="https://api.groq.com/openai/v1"
+#client = OpenAI(
+#    api_key=GROQ_API_KEY,
+#    base_url="https://api.groq.com/openai/v1"
+#)
+openai.api_key = st.secrets["GROQ_API_KEY"]
+openai.base_url = "https://api.groq.com/openai/v1"
+
+response = openai.chat.completions.create(
+    model="llama3-8b-8192",
+    messages=st.session_state.messages
 )
+
+
+
+
+
+
+
+
+
+
+
 
 st.set_page_config(page_title="LLaMA Chatbot", layout="centered")
 
