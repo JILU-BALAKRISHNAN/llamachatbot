@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # ✅ Set Groq API Key securely
-openai.api_key = st.secrets["GROQ_API_KEY"]
+openai.api_key = "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"
 openai.base_url = "https://api.groq.com/openai/v1"
 
 # ✅ Page config
